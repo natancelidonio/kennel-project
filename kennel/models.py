@@ -9,15 +9,15 @@ from django.contrib.auth.models import User
 # category (foreign key), show (boolean), owner (foreign key)
 # picture (imagem)
 
-# class Category(models.Model):
-#     class Meta:
-#         verbose_name = 'Category'
-#         verbose_name_plural = 'Categories'
+class Category(models.Model):
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
     
-#     name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
     
-#     def __str__(self) -> str:
-#         return f'{self.name} (ID: {self.id})'
+    def __str__(self) -> str:
+        return f'{self.name} (ID: {self.id})'
 
 class Dog(models.Model):
     first_name = models.CharField(max_length=50)

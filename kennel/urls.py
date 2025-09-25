@@ -5,5 +5,5 @@ app_name = 'kennel'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('litters', views.litters , name='litters'), 
+    # path('litters', views.litters , name='litters'), 
 ]
